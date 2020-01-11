@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100&display=swap" rel="stylesheet">
 <style>
 body {
   margin: 0;
@@ -44,6 +45,40 @@ width:100%;
 #filters:hover{
 background-color: #10E1A0;
 }
+.item {
+
+border-color: #000000;
+color: rgb(0, 0, 0);
+font-size: 32px;
+font-family: 'Roboto Mono', monospace;
+width: 310px;
+height: 410px;
+padding: 1px 16px;
+margin-left:25%;
+
+}
+@media screen and (max-width: 900px) {
+  ul {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul li a {
+    text-align: center;
+    float: none;
+    font-size: 32px;
+  }
+}
 </style>
 </head>
 <body>
@@ -60,7 +95,7 @@ background-color: #10E1A0;
 <div class="item">
    <img src="https://github.com/shop-at/shop/blob/master/hodie%20black%20mint.png?raw=true" width="300" height="300">
   <br>
-  <h1>Smoking Monkey Mint Hoodie          29.99€<h1>
+  <p>Smoking Monkey Mint Hoodie          29.99€<p>
     </div>
   
   
