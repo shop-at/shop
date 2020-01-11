@@ -3,85 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100&display=swap" rel="stylesheet">
 <style>
-body {
-  margin: 0;
-}
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 15%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #10E1A0;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #10E1A0;
-  color: white;
-  }
-#filters {
-border-color: #f1f1f1;  
-background-color: #f1f1f1;
-height: 35px; 
-width:100%; 
-
-}
-}
-#filters:hover{
-background-color: #10E1A0;
-}
-.item {
-
-border-color: #000000;
-color: rgb(0, 0, 0);
-font-size: 32px;
-font-family: 'Roboto Mono', monospace;
-width: 310px;
-height: 410px;
-padding: 1px 16px;
-margin-left:15%;
-float: left;
-
-@media screen and (max-width: 900px) {
-  ul {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul li a {
-    float: left;
-    padding: 15px;
-  }
-  
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  ul li a {
-    width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    float: none;
-    font-size: 32px;
-  }
-}
 </style>
 </head>
 <body>
@@ -91,7 +13,13 @@ float: left;
   <li><a href="#news">Mens</a></li>
   <li><a href="#contact">Womans</a></li>
   <li><a href="#about">Kids</a></li>
-  <select id="filters"><option>Filters</option><option>Hoodies</option><option>T-Shirts</option><option>none</option></select>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Filters</a>
+    <div class="dropdown-content">
+      <a href="#">Hoodies</a>
+      <a href="#">T-Shirts</a>
+      <a href="#">None</a>
+    </div>
   
 </ul>
 <div class="item">
