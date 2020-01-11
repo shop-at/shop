@@ -57,30 +57,10 @@ padding: 1px 16px;
 margin-left:15%;
 float: left;
 
-@media screen and (max-width: 900px) {
-  ul {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul li a {
-    float: left;
-    padding: 15px;
-  }
-  
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  ul li a {
-    width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    float: none;
-    font-size: 32px;
-  }
+@media screen and (max-width: 600px) {
+  ul.menubar li.right, 
+  ul.menubar li {float: none;}
+  ul.menubar {position: none;}
 }
 li a, .dropbtn {
   display: inline-block;
